@@ -137,3 +137,9 @@ div.page-indicator {
     background-color: #383838;
     border-radius: 100%;
 }
+
+@media only screen and (max-width: 1000px) {
+    div.container {
+        padding: 20px;
+    }
+}
