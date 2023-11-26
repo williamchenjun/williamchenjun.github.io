@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jun William Chen</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="../header.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <span id="logo"><a href="">JWC</a></span>
+                <ul id="navbar-links">
+                    <li><a href="../index.html">Home</a><div class="page-indicator"></div></li>
+                    <li><a href="./index.html" class="active-page">Projects</a></li>
+                    <li><a href="../contacts/index.html" >Contacts</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="main-body">
+            <div class="container">
+                <div class="intro">
+                    <h1>Projects</h1><br>
+                    <p>The following are the <b>main projects</b> that I have worked on in the past 4 years which are considerably longer than the rest. They are written in the form of dissertations and have been previously marked.</p>
+                </div>
+                <br>
+                <div class="projects">
+                   <script>
+                    const DisplayProjects = (data, target) => {
+                        var ol = document.createElement('ol');
+                        for (var i = 1; i <= Object.keys(data).length; i++){
+                            let li = document.createElement('li');
+                            let a = document.createElement('a');
+                            a.href = "";
+                            a.innerHTML = data[`row-${i}`].Title;
+                            li.appendChild(a);
+                            ol.appendChild(li);
+                        }
+                        target.appendChild(ol);
+                    };
+
+                    const target = document.querySelector('div.projects');
+                    const data = fetch("https://raw.githubusercontent.com/meowcatdoes/projectsdata/main/projects.json")
+                    .then(resp => resp.json())
+                    .then(res => DisplayProjects(res, target));
+                   </script>
+                </div>
+                <br>
+                <div class="other-projects">
+                    The following are some other <b>smaller projects</b> that I have worked on:<br><br>
+                    <script>
+                    const new_target = document.querySelector('div.other-projects');
+                    const other_data = fetch("https://raw.githubusercontent.com/meowcatdoes/projectsdata/main/projects2.json")
+                    .then(resp => resp.json())
+                    .then(res => DisplayProjects(res, new_target));
+                    </script>
+                </div>
+            </div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+{"row-1": {
+    "Title" : "Random Matrix Theory and the Riemann Zeta Function",
+    "Description" : "A project on the study of the correlation between the spacing distribution of the eigenvalues of random matrices and the zeros of the Zeta function.",
+    "Hashtags": ["Project", "Statistics", "Pure Mathematics"],
+    "Download" : "",
+    "Preview" : ""
+},
+"row-2": {
+    "Title" : "Election Statistics",
+    "Description" : "A statistical analysis of the 2016 presidential elections in the USA and how predictive studies do not necessarily represent reality.",
+    "Hashtags": ["Project", "Statistics", "Probability Theory"],
+    "Download" : "",
+    "Preview" : ""
+},
+"row-3": {
+    "Title" : "Disproportionality in Stop and Search Action in London",
+    "Description" : "A statistical analysis of the disproportionality of stop and search action in London. More specifically, if there is evidence to suggest that it is used unfairly towards BAME people.",
+    "Hashtags": ["Project", "Statistics", "Data Science"],
+    "Download" : "",
+    "Preview" : ""
+}
+}
