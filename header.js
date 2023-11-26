@@ -24,5 +24,3 @@ $(window).on('load', () => {
         gsap.to('div.page-indicator', {marginLeft: offset, duration: .4, ease: 'elastic.out(1,0.7)'});
     });
 });
-
-const process = request('process');

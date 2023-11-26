@@ -57,6 +57,40 @@ button > a {
     font-size: 12px;
 }
 
+div {
+    counter-reset: ol;
+}
+
+ol > li {
+    list-style-position:outside;
+    position: relative;
+    margin-bottom: 3px;
+    flex-wrap: wrap;
+}
+
+ol li::before {
+    position: absolute;
+    counter-increment: ol;
+    content: counter(ol);
+    display: inline-flex;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-radius: 100px;
+    left: -23px;
+    width: 17px;
+    height: 17px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+}
+
 header div.navbar {
     width: 100%;
     height: 150px;
@@ -120,12 +154,12 @@ div.container {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    width: 1000px;
+    width: 600px;
     justify-content: center;
     column-gap: 100px;
     align-items: center;
     flex-wrap: wrap-reverse;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 div.page-indicator {
@@ -137,7 +171,18 @@ div.page-indicator {
     border-radius: 100%;
 }
 
-@media only screen and (max-width: 1000px) {
+ol.skillset {
+    -moz-column-count: 2;
+    -moz-column-gap: 16px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 16px;
+    column-count: 2;
+    column-gap: 16px;
+    margin-left: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
     div.container {
         padding: 20px;
     }
@@ -148,5 +193,12 @@ div.page-indicator {
         justify-content: center;
         align-items: center;
         row-gap: 10px;
+    }
+
+    ol.skillset {
+        padding: 20px;
+        column-gap: 20px;
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
     }
 }
