@@ -30,6 +30,8 @@
                 <br>
                 <div class="projects">
                    <script>
+                    
+                    
                     const DisplayProjects = (data, target) => {
                         var ol = document.createElement('ol');
                         for (var i = 1; i <= Object.keys(data).length; i++){
@@ -59,7 +61,12 @@
                     The following are some other <b>smaller projects</b> that I have worked on:<br><br>
                     <script>
                     const new_target = document.querySelector('div.other-projects');
-                    const other_data = fetch("https://raw.githubusercontent.com/williamchenjun/williamchenjun.github.io/main/projects/otherdata.json?token=GHSAT0AAAAAACKZACBDVQ2EXW5CE335VJPQZLDMU3Q")
+                    const other_data = fetch("https://api.github.com/repos/williamchenjun/williamchenjun.github.io/contents/projects/otherdata.json",{
+                        headers: {
+                            "accept": "application/vnd.github.v3.raw",
+                            "authorization": "token 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"
+                        }
+                    })
                     .then(resp => resp.json())
                     .then(res => DisplayProjects(res, new_target));
                     </script>

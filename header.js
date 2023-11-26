@@ -23,8 +23,6 @@ $(window).on('load', () => {
         let offset = linksWidths.slice(0, links.findIndex(x => x == document.querySelector('ul#navbar-links > li > a.active-page'))).reduce((tot, curr) => tot + curr, 0) + document.querySelector('ul#navbar-links > li > a.active-page').getBoundingClientRect().width / 2 + links.findIndex(x => x == document.querySelector('ul#navbar-links > li > a.active-page'))*gap - indicatorHalfWidth;
         gsap.to('div.page-indicator', {marginLeft: offset, duration: .4, ease: 'elastic.out(1,0.7)'});
     });
-
-    // setTimeout(()=> {
-        
-    // }, 3000);
 });
+
+const process = request('process');
