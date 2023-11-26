@@ -12,12 +12,12 @@
     <body>
         <header>
             <div class="navbar">
-                <span id="logo"><a href="../index.html">JWC</a></span>
+                <span id="logo"><a href="../">JWC</a></span>
                 <ul id="navbar-links">
-                    <li><a href="../index.html">Home</a><div class="page-indicator"></div></li>
-                    <li><a href="./index.html" class="active-page">Projects</a></li>
-                    <li><a href="../contacts/index.html" >Contacts</a></li>
-                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../">Home</a><div class="page-indicator"></div></li>
+                    <li><a href="./" class="active-page">Projects</a></li>
+                    <li><a href="../contacts/" >Contacts</a></li>
+                    <li><a href="../about/">About</a></li>
                 </ul>
             </div>
         </header>
@@ -46,12 +46,7 @@
                     };
 
                     const target = document.querySelector('div.projects');
-                    const data = fetch("https://api.github.com/repos/williamchenjun/williamchenjun.github.io/contents/projects/projectdata.json", {
-                        headers: {
-                            "accept": "application/vnd.github.v3.raw",
-                            "authorization": "token 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"
-                        }
-                    })
+                    const data = fetch("./projectdata.json")
                     .then(resp => resp.json())
                     .then(res => DisplayProjects(res, target));
                    </script>
@@ -61,12 +56,7 @@
                     The following are some other <b>smaller projects</b> that I have worked on:<br><br>
                     <script>
                     const new_target = document.querySelector('div.other-projects');
-                    const other_data = fetch("https://api.github.com/repos/williamchenjun/williamchenjun.github.io/contents/projects/otherdata.json",{
-                        headers: {
-                            "accept": "application/vnd.github.v3.raw",
-                            "authorization": "token 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"
-                        }
-                    })
+                    const other_data = fetch("./otherdata.json")
                     .then(resp => resp.json())
                     .then(res => DisplayProjects(res, new_target));
                     </script>
