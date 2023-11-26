@@ -71,7 +71,6 @@ span#logo > a {
     color: #393939;
     font-weight: 900;
     font-size: 36px;
-    margin-left: 50px;
 }
 
 ul#navbar-links {
@@ -141,5 +140,13 @@ div.page-indicator {
 @media only screen and (max-width: 1000px) {
     div.container {
         padding: 20px;
+    }
+
+    header > div.navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
     }
 }

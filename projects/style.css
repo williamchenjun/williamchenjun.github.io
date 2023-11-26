@@ -96,7 +96,6 @@ span#logo > a {
     color: #393939;
     font-weight: 900;
     font-size: 36px;
-    margin-left: 50px;
 }
 
 ul#navbar-links {
@@ -142,7 +141,7 @@ div.container {
     margin-top: 30px;
     align-items: center;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 950px;
     flex-wrap: wrap;
 }
 
@@ -150,5 +149,13 @@ div.container {
 @media only screen and (max-width: 1000px) {
     div.container {
         padding: 20px;
+    }
+
+    header > div.navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
     }
 }
