@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*, html {
+    margin: 0;
+}
+
+body {
+    font-family: 'DM Sans';
+    color: #393939;
+}
+
+::selection {
+    /* background-color: rgba(214, 211, 211, 0.701); */
+    background-color: #393939;
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins';
+    color: #393939;
+}
+
+a {
+    text-decoration: none;
+    color: maroon;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+a:hover {
+    color: #DABFBF;
+}
+
+b {
+    color: #b04343;
+}
+
+button {
+    border: 1px solid #393939;
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0px #393939;
+    cursor: pointer;
+    transition: all .15s ease-out;
+}
+
+button:hover {
+    box-shadow: 6px 6px 0px #393939;
+}
+
+button > a {
+    text-decoration: none;
+    color: #393939;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+}
+
+header div.navbar {
+    width: 100%;
+    height: 150px;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+span#logo > a {
+    text-decoration: none;
+    color: #393939;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+ul#navbar-links {
+    position: relative;
+    display: inline-flex;
+    list-style: none;
+    column-gap: 20px;
+    margin-right: 50px;
+}
+
+ul#navbar-links > li > a {
+    text-decoration: none;
+    color: #393939;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+
+ul#navbar-links > li > a:hover {
+    color: #DABFBF;
+}
+
+div.main-body {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.intro-pic {
+    height: auto;
+}
+
+div.intro-btns {
+    display: inline-flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+div.introduction {
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+div.container {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    justify-content: center;
+    column-gap: 100px;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+}
+
+div.page-indicator {
+    position: absolute;
+    margin-left: 0px;
+    width: 7px;
+    height: 7px;
+    background-color: #383838;
+    border-radius: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    div.container {
+        padding: 20px;
+    }
+
+    header > div.navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+}
