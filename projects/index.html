@@ -44,10 +44,10 @@
                     };
 
                     const target = document.querySelector('div.projects');
-                    const data = fetch("https://api.github.com/repos/williamchenjun/williamchenjun.github.io/contents/main/projects/projectdata.json", {
+                    const data = fetch("https://api.github.com/repos/williamchenjun/williamchenjun.github.io/contents/projects/projectdata.json", {
                         headers: {
-                            "ContentType": "application/vnd.github.v3.raw",
-                            "Authorization": "token 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"
+                            "accept": "application/vnd.github.v3.raw",
+                            "authorization": "token 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"
                         }
                     })
                     .then(resp => resp.json())
