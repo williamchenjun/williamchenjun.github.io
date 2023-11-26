@@ -44,7 +44,7 @@
                     };
 
                     const target = document.querySelector('div.projects');
-                    const data = fetch("https://raw.githubusercontent.com/meowcatdoes/projectsdata/main/projects.json")
+                    const data = fetch("https://raw.githubusercontent.com/williamchenjun/williamchenjun.github.io/main/projects/projectdata.json?token=GHSAT0AAAAAACKZACBD3FLLA73J6CXLIC64ZLDLYBQ")
                     .then(resp => resp.json())
                     .then(res => DisplayProjects(res, target));
                    </script>
@@ -54,7 +54,7 @@
                     The following are some other <b>smaller projects</b> that I have worked on:<br><br>
                     <script>
                     const new_target = document.querySelector('div.other-projects');
-                    const other_data = fetch("https://raw.githubusercontent.com/meowcatdoes/projectsdata/main/projects2.json")
+                    const other_data = fetch("https://raw.githubusercontent.com/williamchenjun/williamchenjun.github.io/main/projects/otherdata.json?token=GHSAT0AAAAAACKZACBD3FLLA73J6CXLIC64ZLDLYBQ")
                     .then(resp => resp.json())
                     .then(res => DisplayProjects(res, new_target));
                     </script>
