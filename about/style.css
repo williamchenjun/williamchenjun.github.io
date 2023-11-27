@@ -172,6 +172,10 @@ div.page-indicator {
     border-radius: 100%;
 }
 
+div.QnA > details > summary {
+    cursor: pointer;
+}
+
 ol.skillset {
     -moz-column-count: 2;
     -moz-column-gap: 16px;
