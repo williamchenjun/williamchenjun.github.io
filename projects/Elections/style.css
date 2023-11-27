@@ -117,15 +117,14 @@ div.introduction {
 
 div.container {
     position: relative;
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 1000px;
     justify-content: center;
     column-gap: 100px;
     align-items: center;
-    flex-wrap: wrap-reverse;
-    text-align: center;
+    flex-wrap: wrap;
 }
 
 div.page-indicator {
@@ -135,6 +134,24 @@ div.page-indicator {
     height: 7px;
     background-color: #383838;
     border-radius: 100%;
+}
+
+div.pdf-preview {
+    max-width: 500px;
+}
+
+div.pdf-preview > iframe {
+    border: none;
+    box-shadow: 5px 5px rgb(169, 169, 169);
+}
+
+div.pdf-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+div.pdf-info > div.info-header > .doctype {
+    color: #adadad;
 }
 
 @media only screen and (max-width: 1000px) {
