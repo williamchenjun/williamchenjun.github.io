@@ -6,6 +6,7 @@ const isDark = () => {
 };
 
 $(document).ready(()=>{
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', isDark()?'#121212':'#ffffff');
     $('span.theme-btn').addClass(isDark()?'dark':'light');
     if (isDark()){
         document.querySelector('span.theme-btn').innerHTML = "&#9788;";
