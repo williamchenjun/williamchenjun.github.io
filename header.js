@@ -53,6 +53,7 @@ $(window).on('load', () => {
             gsap.to('span.theme-btn', {scale: 1, duration: .2, ease: 'expo.out', delay: .3});
             document.querySelector('body').classList.remove('dark-theme');
             document.querySelector('body').classList.add('light-theme');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff');
         } else {
             el.classList.remove('light');
             el.classList.add('dark');
@@ -60,15 +61,28 @@ $(window).on('load', () => {
             gsap.to('span.theme-btn', {scale: 1, duration: .2, ease: 'expo.out', delay: .3});
             document.querySelector('body').classList.remove('light-theme');
             document.querySelector('body').classList.add('dark-theme');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', '#121212');
         }
     });
     
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
         const newColorScheme = event.matches ? "dark" : "light";
-        
+        gsap.to('span.theme-btn', {scale: 0, duration: .2, ease: 'expo.out'});
         if (newColorScheme == "dark"){
+            document.querySelector('span.theme-btn').classList.remove('light');
+            document.querySelector('span.theme-btn').classList.add('dark');
+            gsap.to('span.theme-btn', {scale: 1, duration: .2, ease: 'expo.out', delay: .3});
+            document.querySelector('body').classList.remove('light-theme');
+            document.querySelector('body').classList.add('dark-theme');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', '#121212');
             document.querySelector('span.theme-btn').innerHTML = "&#9788;";
         } else {
+            document.querySelector('span.theme-btn').classList.remove('dark');
+            document.querySelector('span.theme-btn').classList.add('light');
+            gsap.to('span.theme-btn', {scale: 1, duration: .2, ease: 'expo.out', delay: .3});
+            document.querySelector('body').classList.remove('dark-theme');
+            document.querySelector('body').classList.add('light-theme');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff');
             document.querySelector('span.theme-btn').innerHTML = "&#9790;";
         }
     
