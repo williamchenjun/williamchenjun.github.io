@@ -135,6 +135,7 @@ ol > li {
 }
 
 ol li::before {
+    position: absolute;
     counter-increment: ol;
     content: counter(ol);
     display: inline-flex;
