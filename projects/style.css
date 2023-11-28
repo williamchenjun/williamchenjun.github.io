@@ -205,10 +205,6 @@ span.theme-btn:hover {
         padding: 20px;
     }
 
-    ol {
-        padding: 20px;
-    }
-
     header > div.navbar {
         display: flex;
         flex-direction: column;
