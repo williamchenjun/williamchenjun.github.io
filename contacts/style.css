@@ -201,7 +201,7 @@ div.title {
 }
 
 div.title > img {
-   margin-top: -10px;
+   margin-top: 10px;
    z-index: -99;
 }
 

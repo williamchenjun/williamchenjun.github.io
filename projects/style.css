@@ -127,6 +127,13 @@ div {
     counter-reset: ol;
 }
 
+ol > li {
+    list-style-position:outside;
+    position: relative;
+    margin-bottom: 3px;
+    flex-wrap: wrap;
+}
+
 ol li::before {
     counter-increment: ol;
     content: counter(ol);
