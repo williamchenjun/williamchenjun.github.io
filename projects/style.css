@@ -123,6 +123,10 @@ ul#navbar-links > li > a:hover {
     color: #DABFBF;
 }
 
+div {
+    counter-reset: ol;
+}
+
 ol li::before {
     counter-increment: ol;
     content: counter(ol);
