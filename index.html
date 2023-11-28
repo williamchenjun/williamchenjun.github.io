@@ -55,5 +55,25 @@
                 <div class="intro-pic"><img src="assets/images/IMG_3693.jpg" width=250/></div>
             </div>
         </div>
+        <script>
+            $(window).on('load', () => {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            
+                } else {
+
+                }
+            });
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+                const newColorScheme = event.matches ? "dark" : "light";
+                
+                if (newColorScheme == "dark"){
+
+                } else {
+
+                }
+
+            });
+        </script>
     </body>
 </html>

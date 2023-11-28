@@ -186,6 +186,42 @@ ol.skillset {
     margin-left: 30px;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+
+    ol li::before {
+        background-color: white;
+        color: #121212;
+    }
+
+    ::selection {
+        color: rgb(255, 255, 255);
+        background-color: rgb(115, 157, 225);
+    }
+
+    h1, h2, h3, h4, span#logo > a, ul#navbar-links > li > a {
+        color: white;
+    }
+
+    div.page-indicator {
+        background-color: white;
+    }
+
+    button {
+        box-shadow: 3px 3px rgb(215, 120, 120);
+    }
+
+    button:hover {
+        box-shadow: 6px 6px rgb(215, 120, 120);
+    }
+
+    a {
+        color: rgb(206, 68, 68);
+    }
+}
 
 @media only screen and (max-width: 600px) {
     div.container {

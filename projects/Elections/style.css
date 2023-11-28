@@ -155,6 +155,42 @@ div.pdf-info > div.info-header > .doctype {
     color: #adadad;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+
+    div.pdf-preview > iframe {
+        box-shadow: none;
+    }
+
+    ::selection {
+        color: rgb(255, 255, 255);
+        background-color: rgb(115, 157, 225);
+    }
+
+    h1, h2, h3, h4, span#logo > a, ul#navbar-links > li > a {
+        color: white;
+    }
+
+    div.page-indicator {
+        background-color: white;
+    }
+
+    button {
+        box-shadow: 3px 3px rgb(215, 120, 120);
+    }
+
+    button:hover {
+        box-shadow: 6px 6px rgb(215, 120, 120);
+    }
+
+    a {
+        color: rgb(206, 68, 68);
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     div.container {
         padding: 20px;

@@ -10,7 +10,6 @@ body {
 }
 
 ::selection {
-    /* background-color: rgba(214, 211, 211, 0.701); */
     background-color: #393939;
     color: white;
 }
@@ -136,6 +135,38 @@ div.page-indicator {
     height: 7px;
     background-color: #383838;
     border-radius: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+
+    ::selection {
+        color: rgb(255, 255, 255);
+        background-color: rgb(115, 157, 225);
+    }
+
+    h1, h2, h3, h4, span#logo > a, ul#navbar-links > li > a {
+        color: white;
+    }
+
+    div.page-indicator {
+        background-color: white;
+    }
+
+    button {
+        box-shadow: 3px 3px rgb(215, 120, 120);
+    }
+
+    button:hover {
+        box-shadow: 6px 6px rgb(215, 120, 120);
+    }
+
+    a {
+        color: rgb(206, 68, 68);
+    }
 }
 
 @media only screen and (max-width: 1000px) {
