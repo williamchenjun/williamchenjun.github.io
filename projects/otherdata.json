@@ -22,5 +22,10 @@
   "Title": "SQL Data Warehousing and Database Normalization Revision",
   "Description": "",
   "Link": "https://github.com/williamchenjun/DB-Revision"
+},
+"row-6": {
+  "Title": "Websockets Implementation using Flask, SocketIO, and MariaDB",
+  "Description": "",
+  "Link": "https://nothing-blog-33be7273ba1a.herokuapp.com/"
 }
 }
