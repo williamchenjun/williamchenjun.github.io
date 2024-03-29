@@ -22,6 +22,11 @@
         <script src="header.js"></script>
     </head>
     <body>
+        <script>
+            if (localStorage.getItem("theme")){
+                $('body').addClass(localStorage.getItem("theme"));
+            }
+        </script>
         <header>
             <div class="navbar">
                 <span id="logo"><a href="./">JWC</a></span>
@@ -36,27 +41,33 @@
                 </div>
             </div>
         </header>
-        <div class="main-body">
-            <div class="container">
-                
-                <div class="introduction">
-                    <h1>Hello, I am William!</h1>
-                    <h4>Data Scientist based in Italy and United Kingdom</h4>
-                    <p>
-                        I mainly work on projects pertaining to data analysis and statistical inference. However, I also work in artificial intelligence and database management.<br><br>
-                        I have a <b>first class in BSc Mathematics</b> from <a href="https://www.sussex.ac.uk" target="_blank">University of Sussex</a> (2019-2022). I studied there for 3 years, and learned the fundamentals of pure mathematics as well as an introduction to probability and statistics.<br>
-                        I also have a <b>distinction in MSc Data Science</b> from <a href="https://www.kcl.ac.uk" target="_blank">King's College London</a> (2022-2023). I studied there for 1 year, and learned the fundamentals of data science, such as big data technologies, data mining, artificial intelligence and decision making, pattern recognition, database management, and more.<br><br>
-                        Throughout my academic journey I have worked on several projects involving mostly statistical inference, modelling, data mining, and problem solving.<br><br>
-                        I am looking for a role as a data scientist where my combined skillset from both my Mathematics and Data Science backgrounds can be applied.
-                    </p><br>
-                    <div class="intro-btns">
-                        <button><a href="https://github.com/williamchenjun" target="_blank">View GitHub</a></button>
-                        <button><a href="https://www.linkedin.com/in/junwilliamchen/" target="_blank">View LinkedIn</a></button>
-                        <button><a href="mailto:williamchenjun@hotmail.com">Send Email</a></button>
+        <main>
+            <div class="main-body">
+                <div class="container">
+                    <div class="introduction">
+                        <h1>Hello, I am William!</h1>
+                        <h4>Data Scientist based in Italy and United Kingdom</h4>
+                        <p>
+                            I mainly work on projects pertaining to data analysis and statistical inference. However, I also work in artificial intelligence and database management.<br><br>
+                            I have a <b>first class in BSc Mathematics</b> from <a href="https://www.sussex.ac.uk" target="_blank">University of Sussex</a> (2019-2022). I studied there for 3 years, and learned the fundamentals of pure mathematics as well as an introduction to probability and statistics.<br>
+                            I also have a <b>distinction in MSc Data Science</b> from <a href="https://www.kcl.ac.uk" target="_blank">King's College London</a> (2022-2023). I studied there for 1 year, and learned the fundamentals of data science, such as big data technologies, data mining, artificial intelligence and decision making, pattern recognition, database management, and more.<br><br>
+                            Throughout my academic journey I have worked on several projects involving mostly statistical inference, modelling, data mining, and problem solving.<br><br>
+                            I am looking for a role as a data scientist where my combined skillset from both my Mathematics and Data Science backgrounds can be applied.
+                        </p><br>
+                        <div class="intro-btns">
+                            <button><a href="https://github.com/williamchenjun" target="_blank">View GitHub</a></button>
+                            <button><a href="https://www.linkedin.com/in/junwilliamchen/" target="_blank">View LinkedIn</a></button>
+                            <button><a href="mailto:williamchenjun@hotmail.com">Send Email</a></button>
+                        </div>
                     </div>
+                    <div class="intro-pic"><img src="assets/images/IMG_1.png" width=190/></div>
                 </div>
-                <div class="intro-pic"><img src="assets/images/IMG_1.png" width=190/></div>
             </div>
-        </div>
+        </main>
+        <footer>
+            <div class="footer">
+                &#169;2024 Jun William Chen 
+            </div>
+        </footer>
     </body>
 </html>

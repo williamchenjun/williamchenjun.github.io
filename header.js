@@ -1,23 +1,39 @@
 const isDark = () => {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         return true;
+    } else if (localStorage.getItem("theme") == "dark-theme") {
+        return true;
     }
     return false;
 };
 
 $(document).ready(()=>{
+    
+    // if (localStorage.getItem("theme")){
+    //     $('body').addClass(isDark()? 'dark-theme' : 'light-theme');
+    // } else {
+    //     $('body').addClass(localStorage.getItem("theme"));
+    // }
+
+});
+
+$(window).on('load', () => {
+
     document.querySelector('meta[name="theme-color"]').setAttribute('content', isDark()?'#121212':'#ffffff');
     $('span.theme-btn').addClass(isDark()?'dark':'light');
+
     if (isDark()){
         document.querySelector('span.theme-btn').innerHTML = "&#9788;";
     } else {
         document.querySelector('span.theme-btn').innerHTML = "&#9790;";
     }
-    $('body').addClass(isDark()?'dark-theme':'light-theme');
-});
 
-$(window).on('load', () => {
-    
+    if (localStorage.getItem("theme")){
+        $('body').addClass(isDark()? 'dark-theme' : 'light-theme');
+    } else {
+        $('body').addClass(localStorage.getItem("theme"));
+    }
+
     const links = [...document.querySelectorAll('ul#navbar-links > li > a')];
     const linksWidths = links.map(el => el.getBoundingClientRect().width);
     const gap = 20;
@@ -47,6 +63,7 @@ $(window).on('load', () => {
         const el = event.target;
         gsap.to('span.theme-btn', {scale: 0, duration: .2, ease: 'expo.out'});
         if (el.classList.contains('dark')){
+            localStorage.setItem("theme", "light-theme");
             el.classList.remove('dark');
             el.classList.add('light');
             el.innerHTML = "&#9790;";
@@ -55,6 +72,8 @@ $(window).on('load', () => {
             document.querySelector('body').classList.add('light-theme');
             document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff');
         } else {
+            localStorage.setItem("theme", "dark-theme");
+
             el.classList.remove('light');
             el.classList.add('dark');
             el.innerHTML = "&#9788;";
@@ -66,6 +85,11 @@ $(window).on('load', () => {
     });
     
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        
+        if (localStorage.getItem("theme")){
+            return;
+        }
+
         const newColorScheme = event.matches ? "dark" : "light";
         gsap.to('span.theme-btn', {scale: 0, duration: .2, ease: 'expo.out'});
         if (newColorScheme == "dark"){

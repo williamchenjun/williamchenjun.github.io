@@ -17,6 +17,11 @@
         <script src="../header.js"></script>
     </head>
     <body>
+        <script>
+            if (localStorage.getItem("theme")){
+                $('body').addClass(localStorage.getItem("theme"));
+            }
+        </script>
         <header>
             <div class="navbar">
                 <span id="logo"><a href="../">JWC</a></span>
@@ -31,42 +36,49 @@
                 </div>
             </div>
         </header>
-        <div class="main-body">
-            <div class="container">
-                <div class="title">
-                    <h1>About Me</h1>
-                </div>
-                <div class="QnA">
-                    <p>My name is William Chen and I am <span id="age"><script>var date = new Date(); var bday = new Date(2000, 8, 17); document.write((date.getMonth()>bday.getMonth() || (date.getMonth() == bday.getMonth() && date.getDate() >= bday.getDate()))?date.getFullYear()-bday.getFullYear():date.getFullYear()-bday.getFullYear()-1);</script></span> years old. I was born and raised in Savona, Italy. I have graduated high school from Liceo Scientifico O. Grassi in 2019.</p>
-                    <p>In 2019, I started my Bachelor's degree in Mathematics at University of Sussex in Brighton, England. I graduated in 2022 with a first class.</p>
-                    <p>In 2022, I started my Master's degree in Data Science at King's College London in London, England. I graduated in 2023 with a distinction.</p>
-                    <br>
-                    <details>
-                        <summary><b>Transferable Skillset</b></summary>
+        <main>
+            <div class="main-body">
+                <div class="container">
+                    <div class="title">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="QnA">
+                        <p>My name is William Chen and I am <span id="age"><script>const date = new Date();document.querySelector('span#age').innerHTML = date.getFullYear() - 2000;</script></span> years old. I was born and raised in Savona, Italy. I have graduated high school from Liceo Scientifico O. Grassi in 2019.</p>
+                        <p>In 2019, I started my Bachelor's degree in Mathematics at University of Sussex in Brighton, England. I graduated in 2022 with a first class.</p>
+                        <p>In 2022, I started my Master's degree in Data Science at King's College London in London, England. I graduated in 2023 with a distinction.</p>
                         <br>
-                        <ol class="skillset">
-                            <li>Data exploration and analysis</li>
-                            <li>Data transformation, feature engineering, and cleaning</li>
-                            <li>Statistical inference</li>
-                            <li>Model estimation</li>
-                            <li>Artificial intelligence and decision making</li>
-                            <li>Pattern recognition (CNN) and reinforcement learning</li>
-                            <li>Data mining</li>
-                            <li>Big data technologies</li>
-                            <li>Database management and warehousing (SQL & NoSQL)</li>
-                            <li>Programming in Python, R, and JavaScript</li>
-                            <li>Front-end and back-end web design</li>
-                            <li>Problem solving</li>
-                            <li>Strong Mathematics background (Number theory, functional analysis, numerical analysis, group theory, linear algebra, etc.)</li>
-                            <li>Project management and team work</li>
-                        </ol>
-                    </details>
-                    <br>
-                    <p>During the four years in Academia, I worked on a few <a href="../projects/">projects</a> which have helped me consolidate my knowledge in Mathematics, Statistics, and Data Science.</p>
-                    <p>I am looking for job and traineeship opportunities which can help me further advance my career and help me learn more skills specific to the workfield.</p>
-                    <p>To request my CV, or if you want to contact me, please <a href="../contacts/">send me an email</a>.</p>
+                        <details>
+                            <summary><b>Transferable Skillset</b></summary>
+                            <br>
+                            <ol class="skillset">
+                                <li>Data exploration and analysis</li>
+                                <li>Data transformation, feature engineering, and cleaning</li>
+                                <li>Statistical inference</li>
+                                <li>Model estimation</li>
+                                <li>Artificial intelligence and decision making</li>
+                                <li>Pattern recognition (CNN) and reinforcement learning</li>
+                                <li>Data mining</li>
+                                <li>Big data technologies</li>
+                                <li>Database management and warehousing (SQL & NoSQL)</li>
+                                <li>Programming in Python, R, and JavaScript</li>
+                                <li>Front-end and back-end web design</li>
+                                <li>Problem solving</li>
+                                <li>Strong Mathematics background (Number theory, functional analysis, numerical analysis, group theory, linear algebra, etc.)</li>
+                                <li>Project management and team work</li>
+                            </ol>
+                        </details>
+                        <br>
+                        <p>During the four years in Academia, I worked on a few <a href="../projects/">projects</a> which have helped me consolidate my knowledge in Mathematics, Statistics, and Data Science.</p>
+                        <p>I am looking for job and traineeship opportunities which can help me further advance my career and help me learn more skills specific to the workfield.</p>
+                        <p>To request my CV, or if you want to contact me, please <a href="../contacts/">send me an email</a>.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
+        <footer>
+            <div class="footer">
+                &#169;2024 Jun William Chen 
+            </div>
+        </footer>
     </body>
 </html>

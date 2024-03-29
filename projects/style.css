@@ -12,6 +12,7 @@
     --page-indicator-color: #393939;
     --bullet-bg-color: black;
     --bullet-font-color: white;
+    --footer-font-color: #828282;
 }
 
 .dark-theme {
@@ -26,6 +27,7 @@
     --page-indicator-color: white;
     --bullet-bg-color: white;
     --bullet-font-color: black;
+    --footer-font-color: #c2c2c2;
 }
 
 *, html {
@@ -198,6 +200,13 @@ span.theme-btn {
 
 span.theme-btn:hover {
     color: #b04343;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    margin: 30px;
+    color: var(--footer-font-color);
 }
 
 @media only screen and (max-width: 1000px) {

@@ -17,6 +17,11 @@
         <script src="../header.js"></script>
     </head>
     <body>
+        <script>
+            if (localStorage.getItem("theme")){
+                $('body').addClass(localStorage.getItem("theme"));
+            }
+        </script>
         <header>
             <div class="navbar">
                 <span id="logo"><a href="../">JWC</a></span>
@@ -31,23 +36,30 @@
                 </div>
             </div>
         </header>
-        <div class="main-body">
-            <div class="container">
-                <div class="title">
-                    <h1>CONTACT ME</h1>
-                    <img src="../assets/images/IMG_3.png" width="190px">
-                </div>
-                <div class="contact-info">
-                    <p>If you wish to contact me, please feel free to reach out to me on the following platforms or send me an email.</p>
-                    <br>
-                    <ol>
-                        <li><a href="mailto:williamchenjun@hotmail.com">Send an e-mail</a></li>
-                        <li><a href="https://www.linkedin.com/in/junwilliamchen/" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://github.com/williamchenjun" target="_blank">GitHub</a></li>
-                        <li><a href="https://www.facebook.com/phantomality/" target="_blank">Facebook</a></li>
-                    </ol>
+        <main>
+            <div class="main-body">
+                <div class="container">
+                    <div class="title">
+                        <h1>CONTACT ME</h1>
+                        <img src="../assets/images/IMG_3.png" width="190px">
+                    </div>
+                    <div class="contact-info">
+                        <p>If you wish to contact me, please feel free to reach out to me on the following platforms or send me an email.</p>
+                        <br>
+                        <ol>
+                            <li><a href="mailto:williamchenjun@hotmail.com">Send an e-mail</a></li>
+                            <li><a href="https://www.linkedin.com/in/junwilliamchen/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/williamchenjun" target="_blank">GitHub</a></li>
+                            <li><a href="https://www.facebook.com/phantomality/" target="_blank">Facebook</a></li>
+                        </ol>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
+        <footer>
+            <div class="footer">
+                &#169;2024 Jun William Chen 
+            </div>
+        </footer>
     </body>
 </html>

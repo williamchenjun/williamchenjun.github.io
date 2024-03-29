@@ -17,6 +17,11 @@
         <script src="../../header.js"></script>
     </head>
     <body>
+        <script>
+            if (localStorage.getItem("theme")){
+                $('body').addClass(localStorage.getItem("theme"));
+            }
+        </script>
         <header>
             <div class="navbar">
                 <span id="logo"><a href="../../">JWC</a></span>
@@ -31,28 +36,35 @@
                 </div>
             </div>
         </header>
-        <div class="main-body">
-            <div class="container">
-                <div class="pdf-preview">
-                    <h1>Preview</h1>
-                    <iframe src="https://drive.google.com/file/d/1V9NTBHwY--gNXLKou3sWXkbriq0wktK6/preview" width="300" height="450" allow="autoplay"></iframe>
-                </div>
-                <div class="pdf-info">
-                    <div class="info-header">
-                        <h2 class="title">Random Matrix Theory and the Riemann Zeta Function</h2>
-                        <h3 class="doctype">PDF</h3>
-                        <hr><br>
-                        <div class="description">
-                            <h4>Description</h4>
-                            <p>Academic paper dealing with one of the most reknown concepts in Mathematics. The Riemann zeta function is widely used in all scientific fields, however, one baffling problem is yet to be solved. In 1859, Bernhard Riemann would propose a hypothesis that would remain unsolved and frustrate mathematicians. The importance of the Riemann hypothesis is given by its connection to the nature of prime numbers and their distribution. <br>This paper is an exposition on the recent research made by Keating, Jon P., and Nina C. Snaith, on the connection between the distribution of the spacing between consecutive (ordered) eigenvalues of random matrices and the distribution of the spacing between consecutive zeros of the Riemann zeta function.</p>
+        <main>
+            <div class="main-body">
+                <div class="container">
+                    <div class="pdf-preview">
+                        <h1>Preview</h1>
+                        <iframe src="https://drive.google.com/file/d/1V9NTBHwY--gNXLKou3sWXkbriq0wktK6/preview" width="300" height="450" allow="autoplay"></iframe>
+                    </div>
+                    <div class="pdf-info">
+                        <div class="info-header">
+                            <h2 class="title">Random Matrix Theory and the Riemann Zeta Function</h2>
+                            <h3 class="doctype">PDF</h3>
+                            <hr><br>
+                            <div class="description">
+                                <h4>Description</h4>
+                                <p>Academic paper dealing with one of the most reknown concepts in Mathematics. The Riemann zeta function is widely used in all scientific fields, however, one baffling problem is yet to be solved. In 1859, Bernhard Riemann would propose a hypothesis that would remain unsolved and frustrate mathematicians. The importance of the Riemann hypothesis is given by its connection to the nature of prime numbers and their distribution. <br>This paper is an exposition on the recent research made by Keating, Jon P., and Nina C. Snaith, on the connection between the distribution of the spacing between consecutive (ordered) eigenvalues of random matrices and the distribution of the spacing between consecutive zeros of the Riemann zeta function.</p>
+                            </div>
+                        </div><br>
+                        <div class="info-actions">
+                            <button type="button"><a href="https://drive.google.com/uc?export=download&id=1sZKhpc3OgvI0kjPc_Oie_ltUI5LPwe-1" download="Random Matrix Theory and the Riemann Zeta Function Presentation">Download Presentation</a></button>
+                            <button type="button"><a href="https://drive.google.com/uc?export=download&id=1aLcKnWvpp6rLOE6Qm7z4suk84IRiNNfk" download="Random Matrix Theory and the Riemann Zeta Function">Download PDF</a></button>
                         </div>
-                    </div><br>
-                    <div class="info-actions">
-                        <button type="button"><a href="https://drive.google.com/uc?export=download&id=1sZKhpc3OgvI0kjPc_Oie_ltUI5LPwe-1" download="Random Matrix Theory and the Riemann Zeta Function Presentation">Download Presentation</a></button>
-                        <button type="button"><a href="https://drive.google.com/uc?export=download&id=1aLcKnWvpp6rLOE6Qm7z4suk84IRiNNfk" download="Random Matrix Theory and the Riemann Zeta Function">Download PDF</a></button>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
+        <footer>
+            <div class="footer">
+                &#169;2024 Jun William Chen 
+            </div>
+        </footer>
     </body>
 </html>

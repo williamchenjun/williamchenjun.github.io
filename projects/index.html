@@ -17,6 +17,11 @@
         <script src="../header.js"></script>
     </head>
     <body>
+        <script>
+            if (localStorage.getItem("theme")){
+                $('body').addClass(localStorage.getItem("theme"));
+            }
+        </script>
         <header>
             <div class="navbar">
                 <span id="logo"><a href="../">JWC</a></span>
@@ -31,50 +36,54 @@
                 </div>
             </div>
         </header>
-        <div class="main-body">
-            <div class="container">
-                <div class="intro">
-                    <h1>Projects</h1><br>
-                    <p>The following are the <b>main projects</b> that I have worked on in the past 4 years which are considerably longer than the rest. They are written in the form of dissertations and have been previously marked.</p>
-                </div>
-                <br>
-                <div class="projects">
-                   <script>
-                    
-                    
-                    const DisplayProjects = (data, target) => {
-                        var ol = document.createElement('ol');
-                        for (var i = 1; i <= Object.keys(data).length; i++){
-                            let li = document.createElement('li');
-                            let a = document.createElement('a');
-                            a.href = data[`row-${i}`].Link;
-                            a.innerHTML = data[`row-${i}`].Title;
-                            li.appendChild(a);
-                            ol.appendChild(li);
-                        }
-                        target.appendChild(ol);
-                    };
-
-                    const target = document.querySelector('div.projects');
-                    const data = fetch("./projectdata.json")
-                    .then(resp => resp.json())
-                    .then(res => DisplayProjects(res, target));
-                   </script>
-                </div>
-                <br>
-                <div class="other-projects">
-                    The following are some other <b>smaller projects</b> that I have worked on:<br><br>
-                    <script>
-                    const new_target = document.querySelector('div.other-projects');
-                    const other_data = fetch("./otherdata.json")
-                    .then(resp => resp.json())
-                    .then(res => DisplayProjects(res, new_target));
-                    </script>
+        <main>
+            <div class="main-body">
+                <div class="container">
+                    <div class="intro">
+                        <h1>Projects</h1><br>
+                        <p>The following are the <b>main projects</b> that I have worked on in the past 4 years which are considerably longer than the rest. They are written in the form of dissertations and have been previously marked.</p>
+                    </div>
+                    <br>
+                    <div class="projects">
+                       <script>
+                        
+                        
+                        const DisplayProjects = (data, target) => {
+                            var ol = document.createElement('ol');
+                            for (var i = 1; i <= Object.keys(data).length; i++){
+                                let li = document.createElement('li');
+                                let a = document.createElement('a');
+                                a.href = data[`row-${i}`].Link;
+                                a.innerHTML = data[`row-${i}`].Title;
+                                li.appendChild(a);
+                                ol.appendChild(li);
+                            }
+                            target.appendChild(ol);
+                        };
+    
+                        const target = document.querySelector('div.projects');
+                        const data = fetch("./projectdata.json")
+                        .then(resp => resp.json())
+                        .then(res => DisplayProjects(res, target));
+                       </script>
+                    </div>
+                    <br>
+                    <div class="other-projects">
+                        The following are some other <b>smaller projects</b> that I have worked on:<br><br>
+                        <script>
+                        const new_target = document.querySelector('div.other-projects');
+                        const other_data = fetch("./otherdata.json")
+                        .then(resp => resp.json())
+                        .then(res => DisplayProjects(res, new_target));
+                        </script>
+                    </div>
                 </div>
             </div>
-        </div>
-        <script>
-            
-        </script>
+        </main>
+        <footer>
+            <div class="footer">
+                &#169;2024 Jun William Chen 
+            </div>
+        </footer>
     </body>
 </html>

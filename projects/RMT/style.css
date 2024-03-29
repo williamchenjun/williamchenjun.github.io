@@ -13,6 +13,7 @@
     --bullet-bg-color: black;
     --bullet-font-color: white;
     --pdf-preview-box-shadow: 5px 5px rgb(169, 169, 169);
+    --footer-font-color: #828282;
 }
 
 .dark-theme {
@@ -28,6 +29,7 @@
     --bullet-bg-color: white;
     --bullet-font-color: black;
     --pdf-preview-box-shadow: none;
+    --footer-font-color: #c2c2c2;
 }
 
 *, html {
@@ -206,6 +208,13 @@ span.theme-btn {
 
 span.theme-btn:hover {
     color: #b04343;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    margin: 30px;
+    color: var(--footer-font-color);
 }
 
 @media only screen and (max-width: 1000px) {
