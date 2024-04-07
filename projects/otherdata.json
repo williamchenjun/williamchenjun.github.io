@@ -27,5 +27,10 @@
   "Title": "Websockets Implementation using Flask, SocketIO, and MariaDB",
   "Description": "",
   "Link": "https://achillespatroclus.pythonanywhere.com/"
+},
+"row-7": {
+  "Title" : "Taylor Swift Song Classification and Reccomendation System (In Progress)",
+  "Description" : "",
+  "Link": "https://williamchenjun.github.io/projects/taylorswift/"
 }
 }
