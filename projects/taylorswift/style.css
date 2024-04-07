@@ -19,6 +19,7 @@
     --update-bubble-bg: rgb(249, 249, 249);
     --update-bubble-box-shadow: 5px 5px 10px #e0e0e0;
     --progress-updates-box-shadow: 5px 5px 10px #e7e7e7;
+    --project-stages-color: rgb(221, 221, 221);
 }
 
 .dark-theme {
@@ -39,6 +40,7 @@
     --update-bubble-bg: rgb(72, 72, 72);
     --update-bubble-box-shadow: none;
     --progress-updates-box-shadow: none;
+    --project-stages-color: rgb(57, 57, 57);
 }
 
 *, html {
@@ -272,7 +274,7 @@ span.project-stages {
     column-gap: 13px;
     font-size: 18px;
     font-family: "IM Fell DW Pica";
-    color: rgb(221, 221, 221);
+    color: var(--project-stages-color);
 }
 
 span.current-stage {
