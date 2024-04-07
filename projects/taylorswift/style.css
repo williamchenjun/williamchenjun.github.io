@@ -14,6 +14,11 @@
     --bullet-bg-color: black;
     --bullet-font-color: white;
     --footer-font-color: #828282;
+    --progress-updates-bg: #fafafa;
+    --progress-updates-bubbles-bg: rgb(236, 236, 236);
+    --update-bubble-bg: rgb(249, 249, 249);
+    --update-bubble-box-shadow: 5px 5px 10px #e0e0e0;
+    --progress-updates-box-shadow: 5px 5px 10px #e7e7e7;
 }
 
 .dark-theme {
@@ -29,6 +34,11 @@
     --bullet-bg-color: white;
     --bullet-font-color: black;
     --footer-font-color: #c2c2c2;
+    --progress-updates-bg: #464646;
+    --progress-updates-bubbles-bg: rgb(53, 53, 53);
+    --update-bubble-bg: rgb(72, 72, 72);
+    --update-bubble-box-shadow: none;
+    --progress-updates-box-shadow: none;
 }
 
 *, html {
@@ -233,6 +243,7 @@ div.img-container {
     row-gap: 10px;
     justify-content: center;
     align-items: stretch;
+    max-width: 650px;
 }
 
 div.img-parent-container {
@@ -244,7 +255,7 @@ div.img-parent-container {
 }
 
 div.img-parent-container > span {
-    width: 600px;
+    max-width: 600px;
     font-size: 13px;
     font-family: "IM Fell DW Pica";
 }
@@ -275,16 +286,16 @@ div.progress-updates {
     row-gap: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color:#fafafa;
+    background-color: var(--progress-updates-bg);
     border-radius: 10px;
     max-width: 500px;
     height: 300px;
     padding: 20px;
-    box-shadow: 5px 5px 10px #e7e7e7;
+    box-shadow: var(--progress-updates-box-shadow);
 }
 
 div.progress-updates > div.progress-updates-bubbles {
-    background-color: rgb(236, 236, 236);
+    background-color: var(--progress-updates-bubbles-bg);
     padding: 20px;
     border-radius: 5px;
     display: flex;
@@ -296,12 +307,12 @@ div.progress-updates > div.progress-updates-bubbles {
 }
 
 div.update-bubble {
-    background-color: rgb(249, 249, 249);
+    background-color: var(--update-bubble-bg);
     border-radius: 5px;
     padding: 10px 20px;
     font-family: "IM Fell DW Pica";
     max-width: 460px;
-    box-shadow: 5px 5px 10px #e0e0e0;
+    box-shadow: var(--update-bubble-box-shadow);
     display: flex;
     flex-direction: column;
     row-gap: 5px;
