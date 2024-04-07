@@ -268,6 +268,45 @@ span.current-stage {
     color: green;
 }
 
+div.progress-updates {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#fafafa;
+    border-radius: 10px;
+    max-width: 500px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #e7e7e7;
+}
+
+div.progress-updates > div.progress-updates-bubbles {
+    background-color: rgb(236, 236, 236);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    overflow-y: scroll;
+    max-width: 480px;
+    scroll-behavior: smooth;
+}
+
+div.update-bubble {
+    background-color: rgb(249, 249, 249);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: "IM Fell DW Pica";
+    max-width: 460px;
+    box-shadow: 5px 5px 10px #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
 @media only screen and (max-width: 1000px) {
     div.container {
         padding: 20px;

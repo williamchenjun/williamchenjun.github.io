@@ -74,7 +74,7 @@
                             <br>
                         </p>
                         <div class="progress-updates">
-                            <h3>Progress Updates</h3>
+                            <h2>Progress Updates</h2>
                             <div class="progress-updates-bubbles">
                                 <script>
                                     function createBubble(data, target){
@@ -87,7 +87,7 @@
                                             container.className = "update-bubble";
 
                                             const title = document.createElement("p");
-                                            title.textContent = `${type == "good"? "&#10004;" : "&#10008;"} Update ${date}`;
+                                            title.innerHTML = `<b>Update ${date}</b> (${type == "good"? "&#10004;" : "&#10008;"})`;
 
                                             const text = document.createElement("p");
                                             text.textContent = update;
