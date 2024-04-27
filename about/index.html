@@ -43,7 +43,20 @@
                         <h1>About Me</h1>
                     </div>
                     <div class="QnA">
-                        <p>My name is William Chen and I am <span id="age"><script>const date = new Date();document.querySelector('span#age').innerHTML = date.getFullYear() - 2000;</script></span> years old. I was born and raised in Savona, Italy. I have graduated high school from Liceo Scientifico O. Grassi in 2019.</p>
+                        <p>My name is William Chen and I am <span id="age">
+                            <script>
+                                const date = new Date();
+                                const year = date.getFullYear();
+                                const month = date.getMonth() + 1;
+                                const day = date.getDate();
+                                const bday = new Date(2000, 8, 17);
+                                
+                                if (month < bday.getMonth()){
+                                    document.querySelector('span#age').innerHTML = date.getFullYear() - bday.getFullYear() - 1;
+                                } else if (month >= bday.getMonth() && day >= bday.getDate()) {
+                                    document.querySelector('span#age').innerHTML = date.getFullYear() - bday.getFullYear();
+                                }
+                            </script></span> years old. I was born and raised in Savona, Italy. I have graduated high school from Liceo Scientifico O. Grassi in 2019.</p>
                         <p>In 2019, I started my Bachelor's degree in Mathematics at University of Sussex in Brighton, England. I graduated in 2022 with a first class.</p>
                         <p>In 2022, I started my Master's degree in Data Science at King's College London in London, England. I graduated in 2023 with a distinction.</p>
                         <br>
