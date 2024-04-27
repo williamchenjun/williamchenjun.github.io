@@ -1,22 +1,7 @@
 [
     {
-        "Date": "03/04/2023",
-        "Update": "Project started.",
+        "Date": "27/04/2023",
+        "Update": "Project re-started. Original project could not be continued due to data limitations.",
         "Type": "good"
-    }, 
-    {
-        "Date": "03/04/2023",
-        "Update": "Writing script to obtain spectrogram for each Taylor song.",
-        "Type": "good"
-    },
-    {
-        "Date": "06/04/2023",
-        "Update" : "Enhanced spectrogram script to obtain specific size images. Creating training dataset.",
-        "Type" : "good"
-    },
-    {
-        "Date": "07/04/2023",
-        "Update" : "Created project page on GitHub. Continuing training dataset creation.",
-        "Type" : "good"
     }
 ]
