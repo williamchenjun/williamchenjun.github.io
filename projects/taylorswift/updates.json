@@ -3,5 +3,20 @@
         "Date": "27/04/2023",
         "Update": "Project re-started. Original project could not be continued due to data limitations.",
         "Type": "good"
+    },
+    {
+        "Date": "27/04/2023",
+        "Update": "Song lyrics collection.",
+        "Type": "good"
+    },
+    {
+        "Date": "30/04/2023",
+        "Update": "Lyrics data processing.",
+        "Type": "good"
+    },
+    {
+        "Date": "01/05/2023",
+        "Update": "Topic modelling.",
+        "Type": "good"
     }
 ]
