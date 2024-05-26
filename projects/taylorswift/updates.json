@@ -18,5 +18,10 @@
         "Date": "01/05/2023",
         "Update": "Topic modelling.",
         "Type": "good"
+    },
+    {
+        "Date": "20/05/2023",
+        "Update": "Generating metrics visualisations and testing different approaches for topic modelling.",
+        "Type": "good"
     }
 ]
