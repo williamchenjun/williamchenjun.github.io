@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    document.querySelector("div#logo").addEventListener("click", e => {
+    document.querySelector("div.logo").addEventListener("click", e => {
         location.href = location.origin;
     });
 });
