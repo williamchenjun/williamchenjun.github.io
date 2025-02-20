@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>William Chen's Portfolio - Project: Random Matrix Theory and the Riemann Zeta Function</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=tag" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    </head>
+    <body>
+        <script src="../../index.js"></script>
+        <div class="main-container">
+            <div class="header">
+                <div class="logo"><img src="../../assets/JWC.png" alt="JWC" width="150" id="jwc"></div>
+                <div id="navbar">
+                    <ul id="navlinks">
+                        <li><a href="../../">Home</a></li>
+                        <li><a href="../" class="active">Projects</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                        <li><a href="../../about/">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="page-title">
+                    <p><b>Random Matrix Theory and the Riemann Zeta Function</b></p>
+                </div>
+                <div class="scrollable-container">
+                    <h3>Abstract</h3>
+                    <p>
+                        Undergraduate (BSc) research project concerning one of the most renown concepts in Mathematics. The Riemann zeta function is widely used in all scientific fields, however, one baffling problem is yet to be solved. In 1859, Bernhard Riemann would propose a hypothesis that would remain unsolved and frustrate mathematicians for years to come. The importance of the Riemann hypothesis is given by its connection to the nature of prime numbers and their distribution. <br>This paper is an exposition on the recent research made by Keating, Jon P., and Nina C. Snaith, on the connection between the distribution of the spacing between consecutive (ordered) eigenvalues of random matrices and the spacing distribution between consecutive zeros of the Riemann zeta function.
+                    </p>
+                    <h3>Quick Look</h3>
+                    <p>A random matrix is generally defined as a matrix with random variables as some or all of its entries. For instance, given x<sub>1</sub>,x<sub>2</sub>,...,x<sub>6</sub>&#65374;&Dscr;(&mu;, &sigma;<sup>2</sup>), where &mu; and &sigma;<sup>2</sup> are respectively the mean and variance of a probability distribution &Dscr;, X is a random matrix<br>
+                        <script>
+                            createMatrix(
+                                [
+                                    ["x<sub>1</sub>", "x<sub>2</sub>", "x<sub>3</sub>"], 
+                                    ["x<sub>4</sub>", "x<sub>5</sub>", "x<sub>6</sub>"],
+                                    
+                                ], null, "X"
+                            )
+                        </script>
+                    </p>
+                    <p>Random matrices have various applications in nuclear physics, quantum chaos theory, number theory, etc..</p>
+                    <p>One of its applications in nuclear physics was postulated by <a href="https://en.wikipedia.org/wiki/Eugene_Wigner" target="_blank">Eugene Wigner</a>, where he surmised that the behaviour of energy levels in a simple sequence is identical to that of the eigenvalues of a random matrix. From that, we get the <a href="https://en.wikipedia.org/wiki/Wigner_surmise" target="_blank">Wigner surmise</a> (pg. 20), which generalises the probability density function for the spacing of the eigenvalues of a Hermitian (pg. 11) random matrix.</p>
+                    <div class="plot">
+                        <img src="../../assets/wigner.jpg" alt="wigner's surmise">
+                    </div>
+                    <p>
+                    Hence, this sets the foundation for this thesis in regards to the conjecture formulated by Keating, Jon P., and Nina C. Snaith (pg. 24), where we can find a connection between the characteristic equation of a random matrix from the circular unitary ensemble (CUE) and its k-th moment.
+                    </p>
+                    <div class="plot">
+                        <img src="../../assets/cue.jpg" alt="circular unitary ensemble">
+                    </div>
+                    <p>More specifically, we observe that the logarithm of the characteristic equation of a random matrix from the CUE approaches a Gaussian distribution and assumes the analytic properties of the Riemann zeta function.</p>
+                    <h3>Errata</h3>
+                    <p>Take caution in reading pages 22 and 23. The explanation and visualization are not correct. Read <a href="https://en.wikipedia.org/wiki/Circular_ensemble" target="_blank">this</a> for the correct definition.</p>
+                </div>
+                <div class="buttons center">
+                    <a href="https://drive.google.com/uc?export=download&id=1sZKhpc3OgvI0kjPc_Oie_ltUI5LPwe-1" target="_blank">Download Presentation</a>
+                    <a href="https://drive.google.com/uc?export=download&id=1aLcKnWvpp6rLOE6Qm7z4suk84IRiNNfk" target="_blank">Download Thesis</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

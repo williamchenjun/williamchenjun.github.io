@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>William Chen's Portfolio - Project: Disproportionality in Stop and Search Action in London</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=tag" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="header">
+                <div class="logo"><img src="../../assets/JWC.png" alt="JWC" width="150" id="jwc"></div>
+                <div id="navbar">
+                    <ul id="navlinks">
+                        <li><a href="../../">Home</a></li>
+                        <li><a href="../" class="active">Projects</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                        <li><a href="../../about/">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="page-title">
+                    <p><b>Disproportionality in Stop and Search Action in London</b></p>
+                </div>
+                <div class="scrollable-container">
+                    <h3>Abstract</h3>
+                    <p>
+                        Stop and search action is a right given to the U.K. police, and there have been many occasions in
+                        which such power was questioned regarding its fairness. We are going to perform several analyses
+                        regarding stop and search cases from 2015 to 2023, alongwith demographics analysis using the ONS
+                        census data. We are interested in finding whether BAME people are disproportionately affected by
+                        stop and search compared to White people, and whether disproportionality is a predictable phenomenon.
+                    </p>
+                    <h3>Quick Look</h3>
+                    <div class="plot">
+                        <img src="../../assets/ss-cases.jpg" alt="Stop and search cases.">
+                    </div>
+                    <p>
+                        We define <b>disproportionality</b> in the following way:
+                        <blockquote>
+                            Disproportionality is present whenever a group of a population is over or under-represented
+                            compared to the general population in a specific context, due to factors such as gender, religion,
+                            ethnic and racial background, socio-economic status, sexual orientation, or disabilities.
+                        </blockquote>
+                    </p>
+                    <p>
+                        Through the data analysis performed using the ONS census data and the U.K. police data concerning stop and search cases, we have inferred the profile of the average victim of stop and search (remark pg. 43):
+                    </p>
+                    <table align="center">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>&lt;10</th>
+                                <th>10-17</th>
+                                <th>18-24</th>
+                                <th>25-34</th>
+                                <th>&gt;34</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Asian</b></td>
+                                <td>1.02</td>
+                                <td>0.84</td>
+                                <td>1.61</td>
+                                <td>1.06</td>
+                                <td>0.57</td>
+                            </tr>
+                            <tr>
+                                <td><b>Black</b></td>
+                                <td>3.48</td>
+                                <td class="fg-red">4.13</td>
+                                <td class="fg-red">4.09</td>
+                                <td>2.62</td>
+                                <td>1.94</td>
+                            </tr><tr>
+                                <td><b>Mixed</b></td>
+                                <td>1.19</td>
+                                <td>1.52</td>
+                                <td>1.37</td>
+                                <td>0.88</td>
+                                <td>0.49</td>
+                            </tr><tr>
+                                <td><b>Other</b></td>
+                                <td class="fg-red">5.56</td>
+                                <td class="fg-red">4.57</td>
+                                <td class="fg-red">4.93</td>
+                                <td class="fg-red">3.93</td>
+                                <td>3.15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        We notice concerning numbers which seem to appear the highest most often among <b>Black youth</b> and younger people from other ethnicities (remark pg. 47). This means that Black people between the age of 10 and 24 are more likely than White people to be the target of stop and searches. If we further study the data and analyse the number of stop and searches by gender and ethnicity, we observe the following:
+                    </p>
+                    <table align="center">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Female</th>
+                                <th>Male</th>
+                                <th>Other</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Asian</td>
+                                <td>0.32</td>
+                                <td>1.18</td>
+                                <td>1.2</td>
+                            </tr>
+                            <tr>
+                                <td>Black</td>
+                                <td>1.36</td>
+                                <td class="fg-red">3.51</td>
+                                <td>2.8</td>
+                            </tr>
+                            <tr>
+                                <td>Mixed</td>
+                                <td>0.82</td>
+                                <td>1.09</td>
+                                <td>1.4</td>
+                            </tr>
+                            <tr>
+                                <td>Other</td>
+                                <td class="fg-red">2.98</td>
+                                <td class="fg-red">5.34</td>
+                                <td class="fg-red">12.2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        Hence, the general target of stop and searches seems to align with previous research results (pg. 13). That is, <b>Black young men</b> and people of other ethnicities seem to be the primary victims of stop and search action in London.
+                    </p>
+                    <div class="plot">
+                        <img src="../../assets/support.jpg" alt="">
+                    </div>
+                    <p>
+                        The research paper further delves into analyses to find correlation between stop and search data and the demographics of each London borough. To conclude, various tests are performed to find the best predictive model for disproportionality rates. 
+                    </p>
+                </div>
+                <div class="buttons center">
+                    <a href="https://drive.google.com/uc?export=download&id=1CQCvKYTh-64qLpGvVIvav8nrgZC-8_yA" target="_blank">Download Presentation</a>
+                    <a href="https://drive.google.com/uc?export=download&id=1Wu6VLZKo4GJ_BinNh35qsfgr6MRUxNnX" target="_blank">Download Thesis</a>
+                </div>
+            </div>
+        </div>
+        <script src="../../index.js"></script>
+    </body>
+</html>
