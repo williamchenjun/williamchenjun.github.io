@@ -123,6 +123,7 @@ div.main-container {
     padding: 20px;
     column-gap: 200px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 div.logo {
@@ -300,4 +301,24 @@ div.formula {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    div.main-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    div.main-container  div#navbar ul {
+        display: inline-flex;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+    div.header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

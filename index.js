@@ -54,7 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             clone.style.cssText = `
                 position: fixed;
-                max-width: 50%;
+                max-height: 90%;
+                max-width: 90%;
                 width: auto;
                 height: auto;
                 top: 50%;
